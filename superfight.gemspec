@@ -3,22 +3,26 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'superfight/version'
 
-Gem::Specification.new do |spec|
-  spec.name          = "superfight"
-  spec.version       = Superfight::VERSION
-  spec.authors       = ["Patil Varvarian"]
-  spec.email         = ["Patil.Varvarian@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+Gem::Specification.new do |bacon|
+  bacon.name          = "superfight"
+  bacon.version       = Superfight::VERSION
+  bacon.authors       = ["Patil Varvarian"]
+  bacon.email         = ["Patil.Varvarian@gmail.com"]
+  bacon.summary       = "Show Superfight"
+  bacon.description    = "Show Superfight"
+  
+  #spec.description   = %q{TODO: Write a gem description}
+  #spec.summary       = %q{TODO: Write a gem summary}
+  bacon.homepage      = ""
+  bacon.license       = "MIT"
 
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+  bacon.files         = `git ls-files`.split($\)
+  bacon.executables   = bacon.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  bacon.test_files    = bacon.files.grep(%r{^(test|bacon|features)/})
+  bacon.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.3" 
-  spec.add_development_dependency "rake"  
-  spec.add_development_dependency "rspec"
+  bacon.add_development_dependency "bundler", "~> 1.3"  
+  bacon.add_development_dependency "rake"  
+  bacon.add_development_dependency "rspec"
 end
+  
