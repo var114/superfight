@@ -1,4 +1,5 @@
 # coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'superfight/version'
@@ -8,11 +9,9 @@ Gem::Specification.new do |bacon|
   bacon.version       = Superfight::VERSION
   bacon.authors       = ["Patil Varvarian"]
   bacon.email         = ["Patil.Varvarian@gmail.com"]
-  bacon.summary       = "Show Superfight"
-  bacon.description    = "Show Superfight"
+  bacon.summary       = %q{Implementation of Superflight code}
+  bacon.description   = %q{Gem for ruby off rails. Do not use}
   
-  #spec.description   = %q{TODO: Write a gem description}
-  #spec.summary       = %q{TODO: Write a gem summary}
   bacon.homepage      = ""
   bacon.license       = "MIT"
 
